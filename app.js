@@ -15,7 +15,7 @@ async function generateVideo() {
         const response = await fetch("https://fal.run", {
             method: "POST",
             headers: {
-                "Authorization": "fal_sk_bf5fd1a297e1414abb14b866140b5d92:0ce53b0e83a4989843d8a57504edf416", // यहाँ अपनी असली API Key डालें
+                "Authorization": key "fal_sk_bf5fd1a297e1414abb14b866140b5d92:0ce53b0e83a4989843d8a57504edf416", // यहाँ अपनी असली API Key डालें
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({ prompt: prompt, video_size: "16:9" })
